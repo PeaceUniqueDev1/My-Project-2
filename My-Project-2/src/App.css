@@ -1,0 +1,108 @@
+/* Reset default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+/* Counter container */
+#root {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Main counter section */
+#root > div {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    padding: 35px 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Main heading */
+h1 {
+    font-size: 28px;
+    color: #1e293b;
+    margin-bottom: 25px;
+}
+
+/* Count display */
+h2 {
+    font-size: 42px;
+    color: #2563eb;
+    margin-bottom: 25px;
+}
+
+/* All buttons */
+button {
+    padding: 12px 18px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                transform 0.2s ease;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* Click effect */
+button:active {
+    transform: scale(0.96);
+}
+
+/* Keyboard focus */
+button:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 3px;
+}
+
+/* Reset button */
+button:nth-of-type(3) {
+    background-color: #64748b;
+}
+
+button:nth-of-type(3):hover {
+    background-color: #475569;
+}
+
+/* Responsive design for phones */
+@media (max-width: 480px) {
+    #root > div {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    button {
+        padding: 11px 14px;
+        font-size: 14px;
+    }
+}
